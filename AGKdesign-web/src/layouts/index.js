@@ -48,6 +48,8 @@ export const query = graphql`
           title
           description
           createdAt
+          logo {file{url}}
+          backgroundImage {file {url}}
         }
       }
     }

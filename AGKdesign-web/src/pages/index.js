@@ -4,21 +4,22 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Card from '../components/Card';
 import Features from '../components/Features';
+import Skills from '../components/Skills'
+import Aboutme from '../components/Aboutme'
+import Footer from '../components/Footer'
+
 
 
 const IndexPage = ({ data }) => (
-  <div>
+
 <div class="pageContent">
 <Card data={data} />
 
-
-<br />
+<h1>Recent interviews and features</h1>
 <Features data={data} />
-
-Do a skills section that has logos of all the apps I am proficient in like on design code.io
-
-<Link to="/page-2/">This is a link</Link> <br />
-</div>
+<Skills data={data}/>
+<Aboutme />
+<Footer data={data}/>
 </div>
 )
 
@@ -49,6 +50,7 @@ export const query = graphql`
           url
           fileName
           contentType
+          url
         }
         } 
       }
@@ -61,6 +63,7 @@ export const query = graphql`
     node {
       title
       description
+      url
     }
   }
 }

@@ -5,7 +5,9 @@ import styled from 'styled-components'
 const HeaderGroup = styled.div`
 padding: 24px;
 color: #FA7268;
-background: white;
+
+max-width: 952px;
+margin: auto;
 
 h2 {
 color: black;

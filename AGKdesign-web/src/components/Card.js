@@ -17,26 +17,22 @@ const CardGroup = styled.div`
 const CardBackground = styled.div`
 background: url(${props => props.image});
 background-repeat: no-repeat;
-  background-size: cover;
+background-size: 100%;
 border-radius: 20px;
 background-position: center; 
-
-
-
 transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
 :hover {
-background-size: 110%
+  background-size: 110%;
 }
-
 `
 
 const CardLogo = styled.img`
 width: 85px;
 height: 85px;
+
 transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
 :hover {
-  width: 95px;
-  height: 95px;
+
 }
 `
 const CardContentGroup = styled.div`
@@ -62,6 +58,9 @@ const Card = ({ data }) => (
   <CardLogo src={'https:' + edge.node.logo.file.url} />   
   <CardTitle>{edge.node.title}</CardTitle>
   <CardText>{edge.node.description}</CardText>
+
+  Will use this Link Typpe for case studies. Need to add URL to contentful
+<Link to="/page-2/">This is a link</Link> <br />
   </CardContentGroup>
 </CardBackground>
   ))}

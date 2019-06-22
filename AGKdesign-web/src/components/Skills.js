@@ -5,9 +5,9 @@ import styled from 'styled-components'
 const SkillsContainer = styled.div `
 display: grid;
 grid-gap: 20px;
-grid-template-columns: repeat(6, 1fr);
+grid-template-columns: repeat(4, 1fr);
 margin-bottom: 42px;
-max-width: 600px;
+max-width: 400px;
 
 @media only screen and (max-width: 740px) { 
     grid-template-columns: repeat(4, 1fr);
@@ -51,7 +51,7 @@ height: 50px;
 
 const Skills = ({ data }) => (
 <div>
-<h2>Skills</h2>
+<h2>General Skills</h2>
     <SkillsContainer>
         {data.allContentfulSkills.edges.map (edge => (
             <SkillsGroup>
@@ -61,7 +61,7 @@ const Skills = ({ data }) => (
         ))}
     </SkillsContainer>
 
-<h2>Tools</h2>
+<h2>Favourite Tools</h2>
     <SkillsContainer>
         {data.allContentfulTools.edges.map (edge => (
             <SkillsGroup>

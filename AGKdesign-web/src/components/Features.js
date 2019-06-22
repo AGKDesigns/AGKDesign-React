@@ -34,7 +34,7 @@ const FeatureDesc = styled.div`
 
 const Features = ({ data }) => (
 <div>
-<h2>Recent interviews and features</h2> <br />
+<h2>Interviews and features</h2> <br />
     <FeatureGroup> 
 
     {data.allContentfulFeature.edges.map (edge => (

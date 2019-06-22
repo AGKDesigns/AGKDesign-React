@@ -14,9 +14,9 @@ const IndexPage = ({ data }) => (
 
 <div class="pageContent">
 <Card data={data} />
-
-<Skills data={data}/>
 <Features data={data} />
+<Skills data={data}/>
+
 <Aboutme />
 <Footer data={data}/>
 </div>

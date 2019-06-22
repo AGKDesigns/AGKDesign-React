@@ -8,7 +8,10 @@ const FooterGroup = styled.div`
   grid-gap: 40px;
 `
 const Footer = ({ data }) => (
-<FooterGroup>This will soon be my footer!</FooterGroup>
+<FooterGroup>
+<h3>Thank you for visiting.</h3> <br/>
+Instagram Twitter LinkedIn 
+</FooterGroup>
 )
 
 export default Footer

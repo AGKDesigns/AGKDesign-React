@@ -29,9 +29,7 @@ const Header = ({ siteTitle }) => (
 
         <h1>Hello, <br />
         I'm Alex Knight.</h1>
-        <h2>I design <br />
-        Import Lottie Here<br />
-        experiences that people love</h2>
+        <h3>I am a Product Designer living in Tokyo, Japan.</h3>
 
    
   </HeaderGroup>

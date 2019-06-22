@@ -15,9 +15,8 @@ const IndexPage = ({ data }) => (
 <div class="pageContent">
 <Card data={data} />
 
-<h1>Recent interviews and features</h1>
-<Features data={data} />
 <Skills data={data}/>
+<Features data={data} />
 <Aboutme />
 <Footer data={data}/>
 </div>
@@ -38,6 +37,7 @@ export const query = graphql`
     node {
       title
       description
+      url
       logo {
         file {
           url
@@ -64,6 +64,32 @@ export const query = graphql`
       title
       description
       url
+    }
+  }
+}
+
+allContentfulSkills(sort: { fields: [createdAt], order: ASC })  {
+  edges {
+    node {
+      title
+      icon {
+        file {
+          url
+        }
+      }
+    }
+  }
+}
+
+allContentfulTools(sort: { fields: [createdAt], order: ASC })  {
+  edges {
+    node {
+      title
+      icon {
+        file {
+          url
+        }
+      }
     }
   }
 }

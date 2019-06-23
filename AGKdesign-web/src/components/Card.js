@@ -29,6 +29,7 @@ const CardBlanket = styled.div`
 const CardBackground = styled.div`
 
 background: url(${props => props.image});
+min-height: 200px;
 background-repeat: no-repeat;
 background-size: 100%;
 border-radius: 20px;

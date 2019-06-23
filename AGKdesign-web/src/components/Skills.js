@@ -13,6 +13,11 @@ max-width: 400px;
     grid-template-columns: repeat(4, 1fr);
     max-width: 300px;
 }
+
+@media only screen and (max-width: 480px) { 
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 300px;
+}
 `
 
 const SkillsGroup = styled.div`

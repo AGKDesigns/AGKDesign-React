@@ -18,6 +18,10 @@ const FeatureTitle = styled.div`
 color: #FA7268 !important;
 font-size: 12px;
 
+h2 {
+    color: #FA7268;
+}
+
 a {
     color: #FA7268;
     text-decoration: none;

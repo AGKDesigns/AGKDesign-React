@@ -23,7 +23,8 @@ const Social = ({ data }) => (
     {data.allContentfulSocial.edges.map (edge => (
    
     <SocialItem>
-      <a href={edge.node.url}>
+
+      <a href={edge.node.url} target="_blank">
     <Icon src={'https:' + edge.node.icon.file.url} />
     </a>
     </SocialItem>

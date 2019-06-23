@@ -100,6 +100,7 @@ allContentfulSocial(sort: { fields: [createdAt], order: ASC })  {
   edges {
     node {
       title
+      url
       icon {
         file {
           url

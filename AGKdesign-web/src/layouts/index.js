@@ -6,7 +6,7 @@ import './index.css'
 
 const Layout = ({ children, data }) => (
 
-  <div>
+  <div> 
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[

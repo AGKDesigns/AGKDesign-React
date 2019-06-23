@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 const HeaderGroup = styled.div`
 padding: 24px;
+margin-left: -10px;
 color: #FA7268;
 margin-bottom: -24px;
 h2 {

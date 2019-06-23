@@ -33,6 +33,16 @@ Layout.propTypes = {
   children: PropTypes.func,
 }
 
+
+
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-58472702-10');
+
+
 export default Layout
 
 export const query = graphql`

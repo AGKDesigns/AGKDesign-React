@@ -22,7 +22,15 @@ const IndexPage = ({ data }) => (
 <Footer data={data}/>
 
 </div>
+
+
+
+
+
 )
+
+  
+
 
 export default IndexPage
 

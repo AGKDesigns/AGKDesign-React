@@ -25,6 +25,13 @@ width: 950px;
 margin-left: auto;
 margin-right: auto;
 
+
+@media (max-width: 780px) {
+  width: 320px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 `
 
 const Title = styled.div `

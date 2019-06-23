@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => (
 <Aboutme />
 <Social data={data}/>
 <Footer data={data}/>
-.
+
 </div>
 )
 

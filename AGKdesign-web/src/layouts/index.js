@@ -5,12 +5,14 @@ import Header from '../components/header'
 import './index.css'
 
 const Layout = ({ children, data }) => (
+
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />

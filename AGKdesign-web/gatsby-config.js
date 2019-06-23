@@ -23,7 +23,7 @@ module.exports = {
         cookieDomain: "example.com",
       },
     },
-    
+
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',

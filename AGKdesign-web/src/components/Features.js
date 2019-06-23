@@ -15,7 +15,7 @@ max-width: 500px;
 `
 
 const FeatureTitle = styled.div`
-color: #FA7268;
+color: #FA7268 !important;
 font-size: 12px;
 
 a {

@@ -7,18 +7,20 @@ import Features from '../components/Features';
 import Skills from '../components/Skills'
 import Aboutme from '../components/Aboutme'
 import Footer from '../components/Footer'
-
+import Social from '../components/Social'
 
 
 const IndexPage = ({ data }) => (
 
 <div class="pageContent">
+<Social data={data}/>
 <Card data={data} />
 <Features data={data} />
 <Skills data={data}/>
-
 <Aboutme />
+<Social data={data}/>
 <Footer data={data}/>
+
 </div>
 )
 
@@ -82,6 +84,19 @@ allContentfulSkills(sort: { fields: [createdAt], order: ASC })  {
 }
 
 allContentfulTools(sort: { fields: [createdAt], order: ASC })  {
+  edges {
+    node {
+      title
+      icon {
+        file {
+          url
+        }
+      }
+    }
+  }
+}
+
+allContentfulSocial(sort: { fields: [createdAt], order: ASC })  {
   edges {
     node {
       title

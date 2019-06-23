@@ -19,6 +19,12 @@ body h1 {
 body h2 {
     margin-top: 42px;
     margin-bottom: 8px;
+    color: #333333;
+}
+body h3 {
+    margin-top: 42px;
+    margin-bottom: 8px;
+    color: #aaaaaa;
 }
 
 .pageContent {

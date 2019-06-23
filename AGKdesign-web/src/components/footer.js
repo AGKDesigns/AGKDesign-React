@@ -9,8 +9,8 @@ const FooterGroup = styled.div`
 `
 const Footer = ({ data }) => (
 <FooterGroup>
-<h3>Thank you for visiting.</h3> <br/>
-Instagram Twitter LinkedIn 
+<h3>Thank you for visiting.</h3>
+
 </FooterGroup>
 )
 

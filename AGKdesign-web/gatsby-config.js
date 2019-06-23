@@ -6,20 +6,7 @@ module.exports = {
   },
 
   plugins: [
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-source-contentful',
-      options: {
-        spaceId: 's7l2balf0h27',
-        accessToken: '0UGnPMJK-6SLBR3J5iA6ToUPGBkqeqUJy1NuOKpZfhc'
-      }
-    }
-  ],
-}
 
-// In your gatsby-config.js
-module.exports = {
-  plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -36,5 +23,16 @@ module.exports = {
         cookieDomain: "example.com",
       },
     },
+    
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: 's7l2balf0h27',
+        accessToken: '0UGnPMJK-6SLBR3J5iA6ToUPGBkqeqUJy1NuOKpZfhc'
+      }
+    }
+
   ],
 }
+

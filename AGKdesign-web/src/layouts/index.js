@@ -12,7 +12,7 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
-        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        { name: 'viewport', content: 'width=device-width, initial-scale=1'}
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />

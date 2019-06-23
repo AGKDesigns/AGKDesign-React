@@ -6,7 +6,7 @@ import Card from '../components/Card';
 import Features from '../components/Features';
 import Skills from '../components/Skills'
 import Aboutme from '../components/Aboutme'
-import Footer from '../components/Footer'
+import Footer from '../components/footer'
 import Social from '../components/Social'
 
 
